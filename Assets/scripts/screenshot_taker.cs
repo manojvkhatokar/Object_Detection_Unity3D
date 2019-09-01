@@ -31,8 +31,8 @@ public class screenshot_taker : MonoBehaviour
             Texture2D renderResult = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
             Rect rect = new Rect(0, 0, renderTexture.width, renderTexture.height);
             renderResult.ReadPixels(rect, 0, 0);
-            byte[] byteArray = renderResult.EncodeToPNG();
-            System.IO.File.WriteAllBytes(Application.dataPath + "/captured_images/CameraScreenshot"+image_index+".png", byteArray);
+            byte[] byteArray = renderResult.EncodeToJPG();
+            System.IO.File.WriteAllBytes(Application.dataPath + "/captured_images/per_session_images/CameraScreenshot"+image_index+".png", byteArray);
             Debug.Log("saved CameraScreenshot.png");
             
 

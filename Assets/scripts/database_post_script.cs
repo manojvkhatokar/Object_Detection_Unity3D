@@ -44,8 +44,8 @@ public class database_post_script : MonoBehaviour
         }
 
         WWWForm form = new WWWForm();
-        form.AddField("image", image.text);
-        form.AddField("image_url", image_url.text);
+        //form.AddField("image", image.text);
+        //form.AddField("image_url", image_url.text);
 
         WWW www1 = new WWW("http://localhost/object_detection_connnection.php", form);
         yield return www1;

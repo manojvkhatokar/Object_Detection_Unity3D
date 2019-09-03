@@ -6,20 +6,24 @@ using UnityEngine.UI;
 
 public class image_upload_to_php_file : MonoBehaviour
 {
+    public InputField port_forwarding_ip_address;
+    public static string ipaddress;
 
     public void upload_data_to_php_file()
     {
+        
         StartCoroutine(upload_data_to_php_file_ienumerator());
     }
+   
 
     IEnumerator upload_data_to_php_file_ienumerator()
     {
         WWWForm form = new WWWForm();
         form.AddField("image", "image"+screenshot_taker.image_index+"added");
         form.AddField("image_url", Application.dataPath+ "/captured_images/per_session_images/CameraScreenshot" + screenshot_taker.image_index + ".png");
-        
 
-        WWW www = new WWW("http://localhost/object_detection_connection.php", form);
+        ipaddress = "http://"+port_forwarding_ip_address.text+"/object_detection_connection.php";
+        WWW www = new WWW(ipaddress, form);
         yield return www;
 
         if(www.text == "")

@@ -25,12 +25,12 @@ public class input_manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             play_camera_shutter_sound();
 
             ++screenshot_taker.image_index;
-            Debug.Log(" pressed key k");
+            Debug.Log(" pressed key z");
             screenshot_taker.take_screenshot_static();
         }
 

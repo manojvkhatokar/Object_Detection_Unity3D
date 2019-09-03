@@ -23,7 +23,7 @@ public class database_post_script : MonoBehaviour
     }
     IEnumerator send_data()
     {
-        using (UnityWebRequest www = UnityWebRequest.Get("http://localhost/object_detection_connection.php"))
+        using (UnityWebRequest www = UnityWebRequest.Get(image_upload_to_php_file.ipaddress))
         {
             yield return www.SendWebRequest();
 

@@ -5,6 +5,12 @@ ScriptsOnlyBuild:
     - image_upload_to_php_file
     - input_manager
     - screenshot_taker
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -42,6 +48,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -56,30 +64,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9432}
-    - Class: 114
-      Script: {instanceID: 9434}
-    - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9446}
-    - Class: 114
-      Script: {instanceID: 9454}
+    - Class: 109
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9456}
     - Class: 114
-      Script: {instanceID: 9490}
+      Script: {instanceID: 9458}
     - Class: 114
-      Script: {instanceID: 9492}
+      Script: {instanceID: 9464}
     - Class: 114
-      Script: {instanceID: 9912}
+      Script: {instanceID: 9470}
     - Class: 114
-      Script: {instanceID: 10178}
+      Script: {instanceID: 9478}
     - Class: 114
-      Script: {instanceID: 10228}
+      Script: {instanceID: 9480}
     - Class: 114
-      Script: {instanceID: 10556}
+      Script: {instanceID: 9514}
+    - Class: 114
+      Script: {instanceID: 9516}
+    - Class: 114
+      Script: {instanceID: 9834}
+    - Class: 114
+      Script: {instanceID: 9936}
+    - Class: 114
+      Script: {instanceID: 10202}
+    - Class: 114
+      Script: {instanceID: 10252}
+    - Class: 114
+      Script: {instanceID: 10338}
+    - Class: 114
+      Script: {instanceID: 10350}
+    - Class: 114
+      Script: {instanceID: 10468}
+    - Class: 114
+      Script: {instanceID: 10580}
+    - Class: 114
+      Script: {instanceID: 10686}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1600,4 +1620,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Object_Detection.unity
-  playerPath: D:/WORK/unity_projects/Object Detection/OBJECT_DETECTOR.apk
+  playerPath: D:/WORK/unity_projects/Object Detection/OBJECT_DETECTOR.apk.aab

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -32,7 +33,8 @@ public class image_upload_to_php_file : MonoBehaviour
 
         if (port_forwarding_ip_address.text == "")
         {
-            ipaddress = "http://localhost/object_detection_connection.php";
+            //ipaddress = "http://localhost/object_detection_connection.php";
+            Debug.Log(" using firebase database now");
 
         }
         else

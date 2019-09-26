@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "664992682218",
+    "firebase_url": "https://flask-3a1fb.firebaseio.com",
+    "project_id": "flask-3a1fb",
+    "storage_bucket": "flask-3a1fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664992682218:android:662964b79dbd6e1fe2c793",
+        "android_client_info": {
+          "package_name": "com.KHATOKAR.OBJECT_DETECTOR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664992682218-205r4tg1vggfvb03lj1d0k0mbl89vf9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc-EaFxJEQpW_RQXE0DeSv8RMxyNN4piI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664992682218-205r4tg1vggfvb03lj1d0k0mbl89vf9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

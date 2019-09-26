@@ -69,8 +69,34 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\RestClient\DemoScene\Scripts\MainScript.cs" />
+    <Compile Include="Assets\RestClient\DemoScene\Scripts\Model\Photo.cs" />
+    <Compile Include="Assets\RestClient\DemoScene\Scripts\Model\Post.cs" />
+    <Compile Include="Assets\RestClient\DemoScene\Scripts\Model\Todo.cs" />
+    <Compile Include="Assets\RestClient\DemoScene\Scripts\Model\User.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\Common.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\Extensions.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\HttpBase.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\JsonHelper.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestException.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestHelper.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\RequestHelperExtension.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\ResponseHelper.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\Helpers\StaticCoroutine.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\RestClient.cs" />
+    <Compile Include="Assets\RestClient\Packages\Proyecto26.RestClient\RestClientPromise.cs" />
+    <Compile Include="Assets\RestClient\Packages\RSG.Promise\EnumerableExt.cs" />
+    <Compile Include="Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseException.cs" />
+    <Compile Include="Assets\RestClient\Packages\RSG.Promise\Exceptions\PromiseStateException.cs" />
+    <Compile Include="Assets\RestClient\Packages\RSG.Promise\Promise.cs" />
+    <Compile Include="Assets\RestClient\Packages\RSG.Promise\Promise_NonGeneric.cs" />
+    <Compile Include="Assets\RestClient\Packages\RSG.Promise\PromiseHelpers.cs" />
+    <Compile Include="Assets\RestClient\Packages\RSG.Promise\PromiseTimer.cs" />
+    <Compile Include="Assets\RestClient\Packages\RSG.Promise\Tuple.cs" />
     <Compile Include="Assets\scripts\access_camera.cs" />
     <Compile Include="Assets\scripts\database_post_script.cs" />
+    <Compile Include="Assets\scripts\firebase_post_script.cs" />
+    <Compile Include="Assets\scripts\Image_class.cs" />
     <Compile Include="Assets\scripts\image_upload_to_php_file.cs" />
     <Compile Include="Assets\scripts\input_manager.cs" />
     <Compile Include="Assets\scripts\screenshot_taker.cs" />
@@ -79,6 +105,8 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\ColorfulButtons\Credits.txt" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -91,6 +119,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
@@ -299,6 +328,33 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/WORK/unity_projects/Object Detection/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Sharpen">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Database">
+      <HintPath>D:/WORK/unity_projects/Object Detection/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/WORK/unity3D/2019.1.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

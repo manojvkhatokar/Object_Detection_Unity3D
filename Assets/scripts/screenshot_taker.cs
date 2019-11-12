@@ -1,6 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class screenshot_taker : MonoBehaviour
 {
@@ -8,6 +16,11 @@ public class screenshot_taker : MonoBehaviour
      private static screenshot_taker instance;
     private  Camera myCamera;
     private bool takeScreenshotOnNextFrame;
+
+    public static byte[] byteArray;//this is the variable that contains the screenshot in the form of byte 
+    public static Texture2D renderResult;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,12 +41,15 @@ public class screenshot_taker : MonoBehaviour
             takeScreenshotOnNextFrame = false;
             RenderTexture renderTexture = myCamera.targetTexture;
 
-            Texture2D renderResult = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
+            renderResult = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
+
             Rect rect = new Rect(0, 0, renderTexture.width, renderTexture.height);
             renderResult.ReadPixels(rect, 0, 0);
-            byte[] byteArray = renderResult.EncodeToJPG();
+            byteArray = renderResult.EncodeToJPG();
+
             System.IO.File.WriteAllBytes(Application.dataPath + "/captured_images/per_session_images/CameraScreenshot"+image_index+".png", byteArray);
             Debug.Log("saved CameraScreenshot.png");
+            Debug.Log(Application.dataPath + "/captured_images/per_session_images/CameraScreenshot" + image_index + ".png");
             
 
             RenderTexture.ReleaseTemporary(renderTexture);
